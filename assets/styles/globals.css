@@ -268,6 +268,50 @@ header nav .toggle.active::after {
   z-index: -1;
 }
 
+.section__mision {
+  padding-top: 50px;
+}
+.section__mision .mision__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+}
+.section__mision .mision__container h2 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.section__mision .mision__container p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.section__mision .vision__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+}
+.section__mision .vision__container h2 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.section__mision .vision__container p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
 .services-section {
   display: flex;
   justify-content: center;
@@ -436,6 +480,49 @@ header nav .toggle.active::after {
   font-weight: 400;
   text-align: center;
   padding-bottom: 50px;
+}
+
+.footer__section {
+  width: 100%;
+  background-color: #000;
+}
+.footer__section .logo__container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.footer__section .logo__container img {
+  width: 180px;
+  justify-self: center;
+}
+.footer__section .redes__container {
+  padding-bottom: 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.footer__section .redes__container ion-icon {
+  margin-right: 10px;
+  font-size: 30px;
+  color: white;
+}
+.footer__section .apartados__container {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.footer__section .apartados__container a {
+  text-decoration: none;
+  color: white;
+  height: 25px;
+}
+.footer__section .apartados__container a p {
+  font-size: 1.4rem;
 }
 
 .scrollup {
