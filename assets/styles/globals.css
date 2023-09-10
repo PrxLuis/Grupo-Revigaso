@@ -167,6 +167,7 @@ header nav .toggle.active::after {
   color: white;
   border: 1px solid #8A2413;
   box-shadow: -5px 8px 8px 0px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
 }
 .main-section .container-main .action .agendarBtn-container {
   padding-top: 3rem;
@@ -180,10 +181,14 @@ header nav .toggle.active::after {
   text-align: center;
   text-decoration: underline;
   text-underline-offset: 0.8rem;
+  cursor: pointer;
 }
 .main-section .container-main .action .agendarBtn-container ion-icon {
   color: white;
   font-size: 25px;
+}
+.main-section .flama-desktop {
+  display: none;
 }
 .main-section .background-m {
   position: absolute;
@@ -198,10 +203,10 @@ header nav .toggle.active::after {
   z-index: -1;
 }
 
-.section__mision {
+.section__mision-vision {
   padding-top: 50px;
 }
-.section__mision .mision__container {
+.section__mision-vision .mision__container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -209,19 +214,29 @@ header nav .toggle.active::after {
   margin: 0 auto;
   width: 80%;
 }
-.section__mision .mision__container h2 {
+.section__mision-vision .mision__container h2 {
   font-size: 3.2rem;
   font-weight: 400;
   text-align: center;
   padding-bottom: 50px;
 }
-.section__mision .mision__container p {
+.section__mision-vision .mision__container p {
   font-size: 1.8rem;
   font-weight: 400;
   text-align: center;
   padding-bottom: 50px;
 }
-.section__mision .vision__container {
+.section__mision-vision .mision-img {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__mision-vision .mision-img img {
+  height: 80%;
+  max-width: 100%;
+}
+.section__mision-vision .vision__container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -229,17 +244,27 @@ header nav .toggle.active::after {
   margin: 0 auto;
   width: 80%;
 }
-.section__mision .vision__container h2 {
+.section__mision-vision .vision__container h2 {
   font-size: 3.2rem;
   font-weight: 400;
   text-align: center;
   padding-bottom: 50px;
 }
-.section__mision .vision__container p {
+.section__mision-vision .vision__container p {
   font-size: 1.8rem;
   font-weight: 400;
   text-align: center;
   padding-bottom: 50px;
+}
+.section__mision-vision .vision-img {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__mision-vision .vision-img img {
+  height: 80%;
+  max-width: 100%;
 }
 
 .services-section {
@@ -296,6 +321,7 @@ header nav .toggle.active::after {
 .services-section .swiper-container .swiper-slide .box-service:hover {
   background-color: #EEEEEE;
   box-shadow: -5px 8px 8px 0px rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
 }
 .services-section .swiper-container .swiper-slide .box-service:hover .title {
   color: black;
@@ -399,19 +425,25 @@ header nav .toggle.active::after {
   text-align: center;
   padding-bottom: 50px;
 }
-.whyRevigaso-section .whyRevigaso-reason .ionIcon-container {
+.whyRevigaso-section .whyRevigaso-reason {
   display: flex;
   justify-content: center;
-}
-.whyRevigaso-section .whyRevigaso-reason .ionIcon-container ion-icon {
-  font-size: 150px;
+  flex-direction: column;
+  align-items: center;
 }
 .whyRevigaso-section .whyRevigaso-reason .reason-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   width: 80%;
-  margin: 0 auto;
+}
+.whyRevigaso-section .whyRevigaso-reason .reason-container .ionIcon-container {
+  display: flex;
+  justify-content: center;
+}
+.whyRevigaso-section .whyRevigaso-reason .reason-container .ionIcon-container ion-icon {
+  font-size: 150px;
 }
 .whyRevigaso-section .whyRevigaso-reason .reason-container .title {
   font-size: 2rem;
@@ -529,4 +561,197 @@ header nav .toggle.active::after {
   z-index: 99;
   bottom: 3rem;
   right: 1rem;
+}
+
+@media (min-width: 768px) {
+  header {
+    background-color: wheat;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    background-color: black;
+    height: 8rem;
+  }
+  header nav .navigation {
+    grid-column: 2/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+  }
+  header nav .navigation li a {
+    font-size: 1.5rem;
+  }
+  header nav .navigation li a:hover {
+    border-bottom: 1px solid white;
+  }
+  header nav .toggle {
+    display: none;
+  }
+  .main-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .main-section .container-main {
+    height: 60%;
+    justify-content: space-around;
+  }
+  .main-section .container-main h1 {
+    font-size: 4.2rem;
+    font-weight: 600;
+    padding-bottom: 0;
+    width: 60%;
+    text-align: start;
+  }
+  .main-section .container-main .llamaContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-section .container-main .llamaContainer .description {
+    width: 60%;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 0;
+    text-align: start;
+  }
+  .main-section .container-main .action {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main-section .container-main .action .conoceBtn {
+    width: 160px;
+    height: 40px;
+    font-size: 2rem;
+  }
+  .main-section .container-main .action .agendarBtn-container {
+    padding-top: 0;
+  }
+  .main-section .container-main .action .agendarBtn-container .agendarBtn {
+    font-size: 2rem;
+    color: white;
+  }
+  .main-section .container-main .action .agendarBtn-container ion-icon {
+    font-size: 20px;
+  }
+  .main-section .flama-desktop {
+    display: block;
+    width: 336px;
+    height: 336px;
+    justify-self: center;
+  }
+  .main-section .flama-desktop img {
+    animation: floating 2s ease-in-out infinite;
+  }
+  .section__mision-vision {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100%;
+    padding-top: 0;
+  }
+  .section__mision-vision .mision__container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .section__mision-vision .mision__container h2 {
+    font-size: 3.2rem;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .section__mision-vision .mision__container p {
+    padding-bottom: 0;
+    text-align: start;
+    line-height: 2.5rem;
+  }
+  .section__mision-vision .mision-img {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section__mision-vision .mision-img img {
+    height: 80%;
+  }
+  .section__mision-vision .vision__container {
+    width: 80%;
+    grid-column: 2/2;
+    grid-row: 2/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .section__mision-vision .vision__container h2 {
+    font-size: 3.2rem;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .section__mision-vision .vision__container p {
+    padding-bottom: 0;
+    text-align: start;
+    line-height: 2.5rem;
+  }
+  .section__mision-vision .vision-img {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section__mision-vision .vision-img img {
+    height: 80%;
+  }
+  .services-section .swiper-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .services-section .swiper-container .swiper-wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .projects-section .swiper-projects .swiper-wrapper .swiper-slide {
+    width: 400px;
+  }
+  .projects-section .swiper-projects .swiper-wrapper .swiper-slide .picture {
+    width: 400px;
+    height: 400px;
+  }
+  .whyRevigaso-section .whyRevigaso-reason {
+    flex-direction: row;
+  }
+  .whyRevigaso-section .whyRevigaso-reason .reason-container .description {
+    width: 80%;
+  }
+  .map__section .map__container {
+    width: 90%;
+    height: 450px;
+  }
+  .map__section .ubicacion__container {
+    width: 90%;
+  }
+}
+/*=============== KEYFRAMES ===============*/
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
 }/*# sourceMappingURL=globals.css.map */

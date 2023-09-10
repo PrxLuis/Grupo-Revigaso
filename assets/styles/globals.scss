@@ -182,6 +182,8 @@ header {
                 color: white;
                 border: 1px solid #8A2413;
                 box-shadow: -5px 8px 8px 0px rgba(0, 0, 0, 0.8);
+                cursor: pointer;
+
             }
             .agendarBtn-container {
                 padding-top: 3rem;
@@ -195,6 +197,7 @@ header {
                     text-align: center;
                     text-decoration: underline;
                     text-underline-offset: 0.8rem;
+                    cursor: pointer;
                     
                 }
                 ion-icon {
@@ -204,6 +207,9 @@ header {
             }
             
         }
+    }
+    .flama-desktop {
+        display: none;
     }
     .background-m {
         position: absolute;
@@ -219,7 +225,7 @@ header {
     }
 }
 
-.section__mision {
+.section__mision-vision {
     padding-top: 50px;
     .mision__container {
         display: flex;
@@ -239,6 +245,16 @@ header {
             font-weight: 400;
             text-align: center;
             padding-bottom: 50px
+        }
+    }
+    .mision-img {
+        height: 100%;     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 80%;
+            max-width: 100%;
         }
     }
     .vision__container {
@@ -261,6 +277,16 @@ header {
             padding-bottom: 50px
         }
     }
+    .vision-img {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 80%;
+            max-width: 100%;
+        }
+    }
 }
 .services-section {
     display: flex;
@@ -278,6 +304,9 @@ header {
             text-align: center;
             padding-bottom: 50px;
         }
+        // .swiper-wrapper {
+        //     background-color: wheat;
+        // }
         .swiper-slide {
             background-position: center;
             background-size: cover;
@@ -285,7 +314,7 @@ header {
             overflow: hidden;
             display: flex;
             justify-content: center;
-            //background-color: rebeccapurple;
+            // background-color: rebeccapurple;
             
             .box-service {
                 width: 230px;
@@ -321,6 +350,7 @@ header {
                 &:hover {
                     background-color: #EEEEEE;
                     box-shadow: -5px 8px 8px 0px rgba(0, 0, 0, 0.8);
+                    transition: 0.5s;
 
                     .title {
                         color: black;
@@ -435,19 +465,26 @@ header {
         padding-bottom: 50px;
     }
     .whyRevigaso-reason {
-        .ionIcon-container {
-            display: flex;
-            justify-content: center;
-            ion-icon {
-                font-size: 150px;
-            }
-        }
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
         .reason-container {
             display: flex;
             justify-content: center;
             flex-direction: column;
+            align-items: center;
             width: 80%;
-            margin: 0 auto;
+            
+            .ionIcon-container {
+                display: flex;
+                justify-content: center;
+
+                ion-icon {
+                    font-size: 150px;
+                }
+            }
             .title {
                 font-size: 2rem;
                 font-weight: 800;
@@ -574,4 +611,228 @@ header {
     z-index: 99;
     bottom: 3rem;
     right: 1rem;
+}
+
+//Tabletas Desing
+@media (min-width: 768px) {
+    header {
+        background-color: wheat;
+    }
+}
+
+//Desktop Desing
+@media (min-width: 1024px) {
+    header {
+        background-color: black;
+        height: 8rem;
+
+        nav {
+            .navigation {
+                grid-column: 2 / 2;
+                grid-row: 1 / 2;
+                display: flex;
+                justify-content: space-between;
+
+                li a {
+                    font-size: 1.5rem;
+                    &:hover {
+                        border-bottom: 1px solid white;
+                    }
+                }
+            }
+            .toggle {
+                display: none;
+
+            }
+        }
+    }
+
+    .main-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        .container-main {
+            height: 60%;
+            justify-content: space-around;
+
+            $space-title-description-btns: 60%;
+            h1 {
+                font-size: 4.2rem;
+                font-weight: 600;
+                padding-bottom: 0;
+                width: $space-title-description-btns;
+                text-align: start;
+            }
+            .llamaContainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .description {
+                    width: $space-title-description-btns;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    line-height: normal;
+                    padding-bottom: 0;
+                    text-align: start;
+                }
+            }
+            .action {
+                width: $space-title-description-btns;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .conoceBtn {
+                    width: 160px;
+                    height: 40px;
+                    font-size: 2rem;
+                }
+                .agendarBtn-container {
+                    padding-top: 0;
+
+                    .agendarBtn {
+                        font-size: 2rem;
+                        color: white;
+                    }
+                    ion-icon {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .flama-desktop {
+            display: block;
+            width: 336px;
+            height: 336px;
+            justify-self: center;
+            img {
+                animation: floating 2s ease-in-out infinite;
+            }
+        }
+    }
+    .section__mision-vision {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        $w-mision-vision: 80%;
+        height: 100%;
+        padding-top: 0;
+        .mision__container {
+            width: $w-mision-vision;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h2 {
+                font-size: 3.2rem;
+                font-weight: 400;
+                text-align: center;
+                padding-bottom: 50px;
+            }
+            p {
+                padding-bottom: 0;
+                text-align: start;
+                line-height: 2.5rem;
+            }
+        }
+        .mision-img {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                height: 80%;
+            }
+        }
+        .vision__container {
+            width: $w-mision-vision;
+            // height: 100vh;
+            grid-column: 2 /2;
+            grid-row: 2 / 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 auto;
+            h2 {
+                font-size: 3.2rem;
+                font-weight: 400;
+                text-align: center;
+                padding-bottom: 50px;
+            }
+            p {
+                padding-bottom: 0;
+                text-align: start;
+                line-height: 2.5rem;
+            }
+        }
+        .vision-img {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                height: 80%;
+            }
+        }
+    }
+    .services-section {
+            .swiper-container {
+                // background-color: #A2D729;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            .swiper-wrapper {
+                // background-color: wheat;
+                width: 80%;
+                display: flex;
+                justify-content: space-around;
+                // .swiper-slide {
+                //     background-color: rebeccapurple;
+                // }
+            }
+        }
+    }
+    .projects-section {
+        .swiper-projects {
+            .swiper-wrapper{
+                .swiper-slide {
+                    width: 400px;
+                    .picture {
+                        width: 400px;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+    .whyRevigaso-section {
+        .whyRevigaso-reason {
+            flex-direction: row;
+            .reason-container {
+                .description {
+                    width: 80%;
+                }
+            }
+        }
+    }
+    .map__section {
+        $w-map-ubicacion: 90%;
+        .map__container {
+            width: $w-map-ubicacion;
+            height: 450px;
+        }
+        .ubicacion__container {
+            width: $w-map-ubicacion;
+        }
+    }
+}
+
+/*=============== KEYFRAMES ===============*/
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }   
 }

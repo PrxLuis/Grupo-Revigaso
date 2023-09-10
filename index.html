@@ -53,7 +53,9 @@
                     </p>
                 </div>
                 <div class="action">
-                    <button class="conoceBtn">Conoce más...</button>
+                    <button class="conoceBtn">
+                        <span>Conoce más</span>
+                    </button>
                     <div class="agendarBtn-container">
                         <p class="agendarBtn">Agendar cita</p>
                         <ion-icon name="arrow-forward-outline"></ion-icon>
@@ -61,16 +63,25 @@
                 </div>
             </div>
             <div class="background-m"></div>
+            <div class="flama-desktop">
+                <img src="./assets/images/Logo.svg" alt="Logo de Grupo Revigaso">
+            </div>
         </section>
 
-        <section class="section__mision" id="mision">
+        <section class="section__mision-vision" id="mision">
             <div class="mision__container">
-                <h2>Misión</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, aperiam nisi veritatis eius quisquam odio harum aut, omnis libero minus sunt doloremque commodi veniam. Eius quam vel similique nemo vero.</p>
+                <h2>Nuestra Misión</h2>
+                <p>En GRUPO REVI GASO, nuestra misión es clara y apasionante: brindar confianza y excelencia en la competencia de la unidad de inspección. Estamos comprometidos a elevar los estándares de calidad en todos nuestros servicios, permitiendo a nuestros clientes acceder de manera ágil y transparente a soluciones de vanguardia.</p>
+            </div>
+            <div class="mision-img">
+                <img src="./assets/images/mision-desk.png" alt="Retrato de un verificador sosteniendo una libreta">
             </div>
             <div class="vision__container">
-                <h2>Visión</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, aperiam nisi veritatis eius quisquam odio harum aut, omnis libero minus sunt doloremque commodi veniam. Eius quam vel similique nemo vero.</p>
+                <h2>Nuestra Visión</h2>
+                <p>En GRUPO REVI GASO, nuestra visión es clara y ambiciosa: ser la principal autoridad en inspección de sistemas de medición y programas informáticos en el sector hidrocarburos. Nos esforzamos por ser reconocidos como la empresa de referencia en términos de confiabilidad, calidad, buenas prácticas, imparcialidad y honestidad.</p>
+            </div>
+            <div class="vision-img">
+                <img src="./assets/images/vision-desk.png" alt="">
             </div>
 
         </section>
@@ -145,29 +156,28 @@
             <h2>¿Por qué Revigaso?</h2>
 
             <div class="whyRevigaso-reason">
-                <div class="ionIcon-container">
-                    <ion-icon name="flash"></ion-icon>
+                <div class="reason-container">
+                    <div class="ionIcon-container">
+                        <ion-icon name="flash"></ion-icon>
+                    </div>
+                    <p class="title">Seguridad y Calidad en la Inspección</p>
+                    <p class="description">Amet consectetur adipisicing elit. Tempora error, dolorum placeat, dolor ullam optio atque ratione, nesciunt id laborum delectus sed perferendis eius.</p>
                 </div>
                 <div class="reason-container">
+                    <div class="ionIcon-container">
+                        <ion-icon name="people"></ion-icon>
+                    </div>
+                    <p class="title">Estándares de Calidad</p>
+                    <p class="description">Amet consectetur adipisicing elit. Tempora error, dolorum placeat, dolor ullam optio atque ratione, nesciunt id laborum delectus sed perferendis eius.</p>
+                </div>
+                <div class="reason-container">
+                    <div class="ionIcon-container">
+                        <ion-icon name="planet"></ion-icon>
+                    </div>
                     <p class="title">Lorem ipsum, dolor sit.</p>
-                <p class="description">amet consectetur adipisicing elit. Tempora error, dolorum placeat, dolor ullam optio atque ratione, nesciunt id laborum delectus sed perferendis eius.</p>
+                    <p class="description">Amet consectetur adipisicing elit. Tempora error, dolorum placeat, dolor ullam optio atque ratione, nesciunt id laborum delectus sed perferendis eius.</p>
                 </div>
 
-                <div class="ionIcon-container">
-                    <ion-icon name="people"></ion-icon>
-                </div>
-                <div class="reason-container">
-                    <p class="title">Lorem ipsum, dolor sit.</p>
-                <p class="description">amet consectetur adipisicing elit. Tempora error, dolorum placeat, dolor ullam optio atque ratione, nesciunt id laborum delectus sed perferendis eius.</p>
-                </div>
-
-                <div class="ionIcon-container">
-                    <ion-icon name="planet"></ion-icon>
-                </div>
-                <div class="reason-container">
-                    <p class="title">Lorem ipsum, dolor sit.</p>
-                <p class="description">amet consectetur adipisicing elit. Tempora error, dolorum placeat, dolor ullam optio atque ratione, nesciunt id laborum delectus sed perferendis eius.</p>
-                </div>
             </div>
         </section>
 
@@ -185,7 +195,7 @@
     <footer>
         <section class="footer__section">
             <div class="logo__container">
-                <img src="./assets/images/whiteTxtLogo.png" alt="Logo de Revigaso">
+                <img src="./assets/images/whiteTxtLogo.png" alt="Logo de Revigaso" width="150px" height="auto">
             </div>
             <div class="redes__container">
                 <ion-icon name="logo-facebook"></ion-icon>
@@ -214,7 +224,7 @@
     <!-- prettier-ignore -->
     <!-- <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
         ({key: "AIzaSyDuj-yNCML4dr213H51SAVA-QnZ9b3lin0", v: "weekly"});</script> -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuj-yNCML4dr213H51SAVA-QnZ9b3lin0&callback=initMap&v=weekly" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuj-yNCML4dr213H51SAVA-QnZ9b3lin0&callback=initMap&v=weekly" defer></script>
 
     <script src="./assets/js/main.js"></script>
 </body>

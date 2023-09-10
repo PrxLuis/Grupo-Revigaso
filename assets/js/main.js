@@ -2,24 +2,36 @@ const menuToggle = document.querySelector('.toggle');
 const navigation = document.querySelector('.navigation');
 
 menuToggle.onclick = function() {
+  if(window.innerWidth < 1024) {
     menuToggle.classList.toggle('active');
     navigation.classList.toggle('active');
+  }
 }
 
 const navLink = document.querySelectorAll(".nav__link");
 function linkAction() {
-  const navMenu = document.querySelector(".navigation");
+  if(window.innerWidth < 1024) {
+    //const navMenu = document.querySelector(".navigation");
     menuToggle.classList.toggle('active');
     navigation.classList.toggle('active');
+  }
 }
 navLink.forEach((item) => item.addEventListener("click", linkAction));
+
+var wDestop;
+function onWindowResize() {
+   wDestop = window.innerWidth <= 1024 ? true : false;
+  // console.log("el valor es "+wDestop);
+}
+window.addEventListener('resize', onWindowResize);
+onWindowResize();
 
 const swiper = new Swiper('.swiper-container', {
   spaceBetween: 5,
   effect:"coverflow",
   loop: false,
   grabCursor: true,
-  centeredSlides: true,
+  centeredSlides: wDestop,
   slidesPerView: "auto",
   coverflowEffect: {
       rotate: 0,
@@ -36,7 +48,7 @@ const swiper = new Swiper('.swiper-container', {
 const swiper2 = new Swiper('.swiper-projects', {
   spaceBetween: 25,
   effect:"coverflow",
-  loop: true,
+  loop: false,
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
@@ -62,6 +74,12 @@ const sr = ScrollReveal({
 sr.reveal(`h1`,{origin: 'left', reveal: 500})
 sr.reveal(`.llamaContainer`,{origin:'right'})
 sr.reveal(`.conoceBtn, .agendarBtn-container`)
+sr.reveal(`.flama-desktop`)
+
+sr.reveal(`.mision__container, .services-section .subtitle h2`, {origin: "left", reveal: 500})
+sr.reveal(`.vision__container, .projects-section .subtitle h2`, {origin: "right"})
+sr.reveal(`.mision-img, .vision-img`)
+sr.reveal(`.swiper-container .swiper-slide`, {origin: "top", reveal: 500})
 // windows.addEventListener("scroll",scrollActive);
 
 //SCROLL UP
