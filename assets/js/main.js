@@ -48,7 +48,7 @@ const swiper = new Swiper('.swiper-container', {
 const swiper2 = new Swiper('.swiper-projects', {
   spaceBetween: 25,
   effect:"coverflow",
-  loop: false,
+  loop: true,
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
@@ -71,15 +71,10 @@ const sr = ScrollReveal({
   duration: 2500,
   delay: 400
 });
-sr.reveal(`h1`,{origin: 'left', reveal: 500})
+/* sr.reveal(`h1`,{origin: 'left', reveal: 500})
 sr.reveal(`.llamaContainer`,{origin:'right'})
 sr.reveal(`.conoceBtn, .agendarBtn-container`)
-sr.reveal(`.flama-desktop`)
-
-sr.reveal(`.mision__container, .services-section .subtitle h2`, {origin: "left", reveal: 500})
-sr.reveal(`.vision__container, .projects-section .subtitle h2`, {origin: "right"})
-sr.reveal(`.mision-img, .vision-img`)
-sr.reveal(`.swiper-container .swiper-slide`, {origin: "top", reveal: 500})
+sr.reveal(`.flama-desktop`) */
 // windows.addEventListener("scroll",scrollActive);
 
 //SCROLL UP
