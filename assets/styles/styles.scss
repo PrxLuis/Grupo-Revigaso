@@ -19,19 +19,16 @@
     --font-bold: 700;
     --font-black: 900;
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     font-size: 62.5%;
     font-family: var(--html-font);
     scroll-behavior: smooth;
 }
-
 header {
     width: 100%;
     height: 6rem;
@@ -40,7 +37,6 @@ header {
     position: sticky;
     top: -1px;
     z-index: 100;
-
     nav {
         width: 80%;
         height: 100%;
@@ -49,12 +45,10 @@ header {
         grid-template-rows: 1fr;
         background-color: black;
         margin: 0 auto;
-        align-items: center;
-        
+        align-items: center;        
         .logoContainer {
             width: 150px;
             height: 50px;
-            /* background-color: black; */
             grid-column: 1 / 1;
             grid-row: 1 / 1;
         }
@@ -66,7 +60,6 @@ header {
             display: none;
             background-color: var(--main-color);
             z-index: 100;
-
             li {
                 list-style: none;
             }
@@ -76,7 +69,6 @@ header {
                 color: var(--secon-color);
                 margin: 10px 0;
                 font-size: 3.5rem;
-
                 background-image: linear-gradient(270deg, #A2D729 0.81%, #000000 100%);
                 background-position: 0% 100%;
                 background-repeat: no-repeat;                    background-size: 0% 2px;
@@ -108,7 +100,6 @@ header {
             align-items: center;
             z-index: 100000;
             cursor: pointer;
-        
             &::before {
                 content: "";
                 position: absolute;
@@ -119,7 +110,6 @@ header {
                 box-shadow: 0 10px 0 #fff;
                 transition: 0.25s;
             }
-        
             &::after {
                 content: "";
                 position: absolute;
@@ -140,11 +130,9 @@ header {
                     transform: translateY(0px) rotate(-45deg);
                 }
             }
-        
-            }
+        }
     }
 }
-
 .main-section {
     display: flex;
     justify-content: center;
@@ -152,8 +140,6 @@ header {
     width: 100%;
     min-height: 80rem;
     height: 100vh;
-    // background-color: red;
-
     .container-main {
         display: flex;
         flex-direction: column;
@@ -161,7 +147,6 @@ header {
         align-items: center;
         width: 100%;
         height: 80%;
-
         .logo-container{
             width: 240px;
             height: auto;
@@ -173,7 +158,7 @@ header {
         .flama-revigaso {
             width: 200px;
             height: auto;
-
+            animation: floating 2s ease-in-out infinite;
             img {
                 width: 100%;
             }
@@ -185,7 +170,6 @@ header {
             align-items: center;
             width: 100%;
             height: 35%;
-
             h1 {
                 font-size: 2.4rem;
                 font-weight: 800;
@@ -213,7 +197,6 @@ header {
                     border: none;
                     cursor: pointer;
                     background: linear-gradient(90deg, #A2D729 0%, #1E1E1E 100%);
-    
                     span {
                         color: white;
                         font-size: 1.8rem;
@@ -221,14 +204,12 @@ header {
                 }
             }
             .agendarBtn-container {
-                
                 .contactanos {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     cursor: pointer;
                     text-decoration: none;
-
                     .agendarBtn {
                         color: white;
                         font-size: 1.6rem;
@@ -239,12 +220,10 @@ header {
                         font-size: 25px;
                     }
                 }
-
                 .line-whiteToGreen {
                     width: 100%;
                     height: 2px;
                     background: linear-gradient(270deg, #A2D729 0.81%, #FFF 100%);
-
                 }
             }
         }
@@ -271,7 +250,6 @@ header {
         background: rgba(0, 0, 0, 0.50);
     }
 }
-
 .section__mision-vision {
     display: flex;
     justify-content: center;
@@ -280,7 +258,6 @@ header {
     width: 100%;
     height: auto;
     padding: 30px 0;
-
     .mision-vision__container {
         display: flex;
         justify-content: center;
@@ -308,7 +285,6 @@ header {
         }
     }
 }
-
 .services-section {
     display: flex;
     justify-content: center;
@@ -318,12 +294,10 @@ header {
     height: auto;
     padding: 30px 0;
     background-color: #F0F2F5;
-
     .titulo-rmf {
         font-size: 2rem;
         padding: 20px 0;
     }
-    
     .services-container {
         display: flex;
         justify-content: center;
@@ -368,7 +342,6 @@ header {
     flex-direction: column;
     overflow: hidden;
     padding: 50px 0;
-
     .swiper-projects {
         width: 100%;
         padding: 50px 0;
@@ -379,7 +352,6 @@ header {
             overflow: hidden;
             display: flex;
             justify-content: center;
-
             .swiper-slide {
                 background-position: center;
                 background-size: cover;
@@ -426,7 +398,6 @@ header {
     height: auto;
     padding: 30px 0;
     background-color: #F0F2F5;
-
     .ayuda-container {
         .ayuda-contacto {
             display: flex;
@@ -444,7 +415,6 @@ header {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-    
                 .whatsapp {
                     border-radius: 10px;
                     border: none;
@@ -453,7 +423,6 @@ header {
                     background: #25D366;
                     box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.25) inset;
                     cursor: pointer;
-    
                     span {
                         color: white;
                         font-size: 1.8rem;
@@ -467,7 +436,6 @@ header {
                     background: linear-gradient(90deg, #8A2413 0%, #000 100%);
                     box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.25) inset;
                     cursor: pointer;
-    
                     span {
                         color: white;
                         font-size: 1.8rem;
@@ -480,31 +448,26 @@ header {
         }
     }
 }
-
 .whyRevigaso-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 30px 0;
-
     .whyRevigaso-reason {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-
         .reason-container {
             display: flex;
             justify-content: center;
             flex-direction: column;
             align-items: center;
             width: 80%;
-            
             .ionIcon-container {
                 display: flex;
                 justify-content: center;
-
                 ion-icon {
                     font-size: 100px;
                 }
@@ -521,9 +484,7 @@ header {
                 text-align: center;
             }
         }
-        
     }
-    
 }
 .contacto-section {
     display: flex;
@@ -534,7 +495,6 @@ header {
     height: auto;
     background-color: #F0F2F5;
     padding: 30px 0;
-
     .info-elements {
         display: flex;
         justify-content: center;
@@ -587,31 +547,16 @@ header {
             justify-content: center;
             align-items: center;
             flex-direction: column;
-        
             .map__container {
                 width: 95%;
                 height: 300px;
                 padding: 20px 0;
-                
                 #map {
                     height: 100%;
                     width: 100%;
                     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
                 }
             }
-            /* .contactanos {
-                border-radius: 10px;
-                width: 150px;
-                height: 50px;
-                background: linear-gradient(90deg, #8A2413 0%, #000 100%);
-                box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.25) inset;
-                cursor: pointer;
-        
-                span {
-                    color: white;
-                    font-size: 1.8rem;
-                }
-            } */
         }
         .form-section {
             display: flex;
@@ -619,7 +564,6 @@ header {
             justify-content: center;
             padding: 30px 0;
             width: 90%;
-        
             form {
                 background-color: white;
                 padding: 10px 15px;
@@ -627,7 +571,6 @@ header {
                 border-radius: 20px;
                 text-align: center;
                 width: 100%;
-        
                 .input-group {
                     display: flex;
                     flex-direction: column;
@@ -661,7 +604,6 @@ header {
                     display: flex;
                     justify-content: space-between;
                     text-align: center;
-                    
                     a {
                         color: #3A288A;
                         font-size: 1.4rem;
@@ -676,7 +618,6 @@ header {
                     background: linear-gradient(90deg, #3A288A 0%, #000 100%);
                     box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.25) inset;
                     cursor: pointer;
-        
                     &:hover {
                         background-color: #51D94C;
                     }
@@ -685,18 +626,14 @@ header {
         }
     }
 }
-
 .footer__section {
     width: 100%;
     background-color: #000;
-
     .logo__container {
         width: 100%;
         height: auto;
         display: flex;
         justify-content: center;
-        // background-color: #8A2413;
-        
         img {
             width: 180px;
             justify-self: center;
@@ -725,14 +662,12 @@ header {
             text-decoration: none;
             color: white;
             height: 25px;
-            
             p{
                 font-size: 1.4rem;
             }
         }
     }
 }
-
 // Scroll Up
 .scrollup {
     position: fixed;
@@ -746,7 +681,6 @@ header {
     z-index: 100;
     opacity: 0.8;
     transition: 0.4s;
-
     ion-icon {
         font-size: 30px;
         color: white;
@@ -761,7 +695,6 @@ header {
     bottom: 3rem;
     right: 1rem;
 }
-
 //Boton Whatsapp flojante
 .sendwhatsapp {
     position: fixed;
@@ -775,13 +708,11 @@ header {
     z-index: 100;
     opacity: 0.8;
     transition: 0.4s;
-
     ion-icon {
         font-size: 50px;
         color: #25D366;
     }
     &:hover {
-        // background-color: black;
         opacity: 1;
     }
 }
@@ -805,7 +736,6 @@ header {
                 background: linear-gradient(270deg, #A2D729 0.81%, #000 100%);
     }
 }
-
 @media(min-width:768px) {
     .main-section {
         .container-main {
@@ -884,7 +814,6 @@ header {
             grid-template-rows: 1fr 1fr;
             justify-content: center;
             align-items: center;
-    
             .reason-container {
                 justify-self: center;
                 align-self: center;
@@ -894,7 +823,6 @@ header {
                 width: 40%;
                 grid-column: span 2;
             }
-            
         }
         
     }
@@ -907,17 +835,10 @@ header {
         height: auto;
         padding: 30px 0;
         background-color: #F0F2F5;
-    
-        .title-services {
-            padding: 20px 0;
-            //h2 title
-            //linea verde
-        }
         .titulo-rmf {
             font-size: 2rem;
             padding: 20px 0;
         }
-        
         .services-container {
             flex-direction: row;
             width: 95%;
@@ -966,7 +887,6 @@ header {
                     align-items: center;
                     flex-direction: column;
                     padding-bottom: 20px;
-                    
                     .icon-title {
                         display: flex;
                         justify-content: center;
@@ -1013,7 +933,6 @@ header {
     header {
         background-color: black;
         height: 8rem;
-
         nav {
             width: 95%;
             .navigation {
@@ -1041,7 +960,6 @@ header {
                 width: 100%;
                 grid-column: 5 / span 6;
                 grid-row: 1 / 1;
-                //background-color: red;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -1058,7 +976,6 @@ header {
                 height: 100%;
                 grid-column: 8 / span 6;
                 grid-row: 2 / 2;
-                // background-color: #8A2413;
                 img {
                     width: auto;
                     height: 80%;
@@ -1068,7 +985,6 @@ header {
                 width: 100%;
                 height: 100%;
                 grid-column: 2 / span 6;
-                // background-color: #25D366;
                 h1 {
                     font-size: 3.6rem;
                 }
@@ -1085,7 +1001,6 @@ header {
                 transition: 0.5s;
                 align-items: start;
                 gap: 15px;
-                // background-color: #3A288A;
                 a {
                     align-self: center;
                     .conoceBtn {
@@ -1105,7 +1020,6 @@ header {
                         align-items: center;
                         cursor: pointer;
                         text-decoration: none;
-    
                         .agendarBtn {
                             color: white;
                             font-size: 2.4rem;
@@ -1124,7 +1038,6 @@ header {
             flex-direction: row;
             width: 90%;
             .mision__container {
-                // width: 50%;
                 .title-m-v {
                     font-size: 3rem;
                     text-align: center;
@@ -1143,7 +1056,6 @@ header {
             font-size: 2.4rem;
             padding: 20px 0;
         }
-        
         .services-container {
             flex-direction: row;
             width: 70%;
@@ -1212,7 +1124,6 @@ header {
                 display: block;
                 justify-self: center;
                 align-self: center;
-
                 img {
                     height: 70%;
                     width: 100%;
@@ -1227,7 +1138,6 @@ header {
             grid-template-rows: 1fr;
             justify-content: center;
             align-items: center;
-    
             .reason-container {
                 justify-self: center;
                 align-self: center;
@@ -1237,9 +1147,7 @@ header {
                 width: 80%;
                 grid-column: 3 / 3;
             }
-            
         }
-        
     }
     .contacto-section {
         .info-elements {
@@ -1311,4 +1219,11 @@ header {
     font-weight: 400;
     text-align: center;
     }
+}
+
+/*=============== KEYFRAMES ===============*/
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }   
 }

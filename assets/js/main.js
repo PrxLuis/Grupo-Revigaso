@@ -21,7 +21,6 @@ navLink.forEach((item) => item.addEventListener("click", linkAction));
 var wDestop;
 function onWindowResize() {
   wDestop = window.innerWidth <= 1024 ? true : false;
-  // console.log("el valor es "+wDestop);
 }
 window.addEventListener('resize', onWindowResize);
 onWindowResize();
