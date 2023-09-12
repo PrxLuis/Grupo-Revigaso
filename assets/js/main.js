@@ -20,35 +20,16 @@ navLink.forEach((item) => item.addEventListener("click", linkAction));
 
 var wDestop;
 function onWindowResize() {
-   wDestop = window.innerWidth <= 1024 ? true : false;
+  wDestop = window.innerWidth <= 1024 ? true : false;
   // console.log("el valor es "+wDestop);
 }
 window.addEventListener('resize', onWindowResize);
 onWindowResize();
 
-const swiper = new Swiper('.swiper-container', {
-  spaceBetween: 5,
-  effect:"coverflow",
-  loop: false,
-  grabCursor: true,
-  centeredSlides: wDestop,
-  slidesPerView: "auto",
-  coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 0,
-      modifer: 1,
-      slideShadows: false
-  },
-  pagination: {
-      el: ".swiper-pagination"
-  }
-});
-
 const swiper2 = new Swiper('.swiper-projects', {
   spaceBetween: 25,
   effect:"coverflow",
-  loop: true,
+  loop: false,
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
@@ -57,7 +38,7 @@ const swiper2 = new Swiper('.swiper-projects', {
       stretch: 0,
       depth: 350,
       modifer: 1,
-      slideShadows: false
+      slideShadows: true
   },
   pagination: {
       el: ".swiper-pagination"
@@ -84,3 +65,11 @@ function scrollUp(){
   else scrollUp.classList.remove("show-scroll");
 }
 window.addEventListener("scroll", scrollUp)
+
+//BOTON WHATSAPP
+function sendWhats(){
+  const showWhats = document.getElementById("send-whatsapp");
+  if(this.scrollY>=70) showWhats.classList.add("show-whats");
+  else showWhats.classList.remove("show-whats");
+}
+window.addEventListener("scroll", sendWhats)
