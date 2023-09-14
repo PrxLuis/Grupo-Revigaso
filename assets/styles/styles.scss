@@ -174,6 +174,7 @@ header {
                 font-size: 2.4rem;
                 font-weight: 800;
                 color: white;
+                text-align: center;
             }
             .description {
                 width: 70%;
@@ -277,9 +278,10 @@ header {
                 padding: 20px 0;
             }
             .description-m-v{
+                width: 90%;
                 font-size: 1.8rem;
                 font-weight: 400;
-                text-align: left;
+                text-align: justify;
                 padding: 20px 0;
             }
         }
@@ -395,7 +397,7 @@ header {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 30px 0;
     background-color: #F0F2F5;
     .ayuda-container {
@@ -415,6 +417,7 @@ header {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+                gap: 1rem;
                 .whatsapp {
                     border-radius: 10px;
                     border: none;
@@ -592,12 +595,12 @@ header {
                     padding: 17px 25px;
                     border-radius: 25px;
                     margin-bottom: 20px;
-                    background: rgba(62, 116, 214, 0.20);
-                    border: 2px solid #F0FAF1;
+                    background: rgba(107, 159, 255, 0.2);
+                    border: 2px solid #e7e2ff;
                     outline: none;
                 }
                 input::placeholder, textarea::placeholder {
-                    color: #b5cab6;
+                    color: #3A288A;
                 }
                 .form-txt {
                     margin-bottom: 30px;
@@ -864,7 +867,6 @@ header {
                         font-size: 1.4rem;
                         text-align: center;
                         color: white;
-                        width: 60%;
                     }
                     img {
                         width: 160px;
@@ -932,14 +934,14 @@ header {
 @media (min-width: 1024px) {
     header {
         background-color: black;
-        height: 8rem;
+        height: 6rem;
         nav {
             width: 95%;
             .navigation {
                 display: flex;
                 justify-content: space-between;
                 li a {
-                    font-size: 2rem;
+                    font-size: 1.8rem;
                 }
             }
             .toggle {
@@ -1004,10 +1006,10 @@ header {
                 a {
                     align-self: center;
                     .conoceBtn {
-                        width: 217px;
-                        height: 72px;
+                        width: 16rem;
+                        height: 5rem;
                         span {
-                            font-size: 2.4rem;
+                            font-size: 2rem;
                             font-weight: 600;
                         }
                     }
@@ -1019,14 +1021,15 @@ header {
                         justify-content: center;
                         align-items: center;
                         cursor: pointer;
+                        min-width: 16rem;
                         text-decoration: none;
                         .agendarBtn {
                             color: white;
-                            font-size: 2.4rem;
+                            font-size: 2rem;
                         }
                         ion-icon {
                             color: white;
-                            font-size: 25px;
+                            font-size: 2rem;
                         }
                     }
                 }
@@ -1102,7 +1105,7 @@ header {
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-around;
-                height: 70%;
+                // height: 100%;
                 p {
                     justify-self: center;
                     align-self: center;
@@ -1111,6 +1114,7 @@ header {
                     width: 70%;
                     height: auto;
                     min-height: 12rem;
+                    padding-bottom: 5rem;
                 }
                 .buttons-container {
                     width: 80%;
@@ -1121,12 +1125,17 @@ header {
                 }
             }
             .contacto-img {
-                display: block;
                 justify-self: center;
                 align-self: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+                height: 80%;
                 img {
-                    height: 70%;
-                    width: 100%;
+                    height: 100%;
+                    width: auto;
+                    max-height: 100%;
                 }
             }
         }
